@@ -181,4 +181,10 @@
     <string name="disable_fingerprint_ripple_effect_title">Disable Ripple effect</string>
     <string name="disable_fingerprint_ripple_effect_summary">Disable ripple effect on unlock</string>
 
+    <!-- Torch Power button gestures -->
+    <string name="torch_power_button_gesture_title">Toggle torch when screen off</string>
+    <string name="torch_power_button_gesture_none">Disabled</string>
+    <string name="torch_power_button_gesture_dt">Double press power button (Disables Quickly open camera feature and adds 170ms wakeup delay)</string>
+    <string name="torch_power_button_gesture_lp">Long press power button</string>
+
 </resources>
