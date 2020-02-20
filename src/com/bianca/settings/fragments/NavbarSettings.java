@@ -42,6 +42,7 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
     private static final String KEY_NAVIGATION_BAR_ENABLED = "force_show_navbar";
     private static final String KEY_SWAP_NAVIGATION_KEYS = "swap_navigation_keys";
     private static final String KEY_GESTURE_SYSTEM = "gesture_system_navigation";
+    private static final String KEY_LAYOUT_SETTINGS = "layout_settings";
 
     private static final String KEY_BACK_LONG_PRESS_ACTION = "back_key_long_press";
     private static final String KEY_BACK_LONG_PRESS_CUSTOM_APP = "back_key_long_press_custom_app";
@@ -106,6 +107,7 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
     private Preference mHomeLongPressCustomApp;
     private Preference mHomeDoubleTapCustomApp;
     private Preference mGestureSystemNavigation;
+    private Preference mLayoutSettings;
 
     private int deviceKeys;
 
@@ -169,6 +171,11 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
         mGestureSystemNavigation = (Preference) findPreference(KEY_GESTURE_SYSTEM);
 
         mSwapHardwareKeys = (SystemSettingSwitchPreference) findPreference(KEY_SWAP_NAVIGATION_KEYS);
+
+        mLayoutSettings = (Preference) findPreference(KEY_LAYOUT_SETTINGS);
+        if (BiancaUtils.isGestureNavbar()) {
+            prefSet.removePreference(mLayoutSettings);
+        }
 
         mNavigationBar = (SwitchPreference) findPreference(KEY_NAVIGATION_BAR_ENABLED);
         mNavigationBar.setChecked(isNavbarVisible());
