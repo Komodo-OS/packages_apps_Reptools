@@ -96,6 +96,9 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
 
     private boolean defaultToNavigationBar;
     private boolean navigationBarEnabled;
+    private boolean mIsNavSwitchingMode = false;
+
+    private Handler mHandler;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -262,6 +265,8 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
             prefSet.removePreference(mCameraCategory);
         }
 
+        mHandler = new Handler();
+
         navbarCheck();
     }
 
@@ -270,9 +275,19 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
 
         if (preference == mNavigationBar) {
             boolean value = (Boolean) objValue;
+            if (mIsNavSwitchingMode) {
+                return false;
+            }
+            mIsNavSwitchingMode = true;
             Settings.System.putInt(resolver,
                     Settings.System.FORCE_SHOW_NAVBAR, value ? 1 : 0);
             navbarCheck();
+            mHandler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    mIsNavSwitchingMode = false;
+                }
+            }, 1500);
             return true;
         } else if (preference == mBackLongPress) {
             int value = Integer.parseInt((String) objValue);
