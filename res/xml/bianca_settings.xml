@@ -62,13 +62,6 @@
             android:fragment="com.bianca.settings.fragments.PowermenuSettings"
             android:icon="@drawable/ic_settings_powermenu"/>
 
-        <!-- Recents
-        <com.bianca.settings.preferences.CardviewPreference
-            android:key="recents_category"
-            android:title="@string/recents_title"
-            android:fragment="com.bianca.settings.fragments.RecentsSettings"
-            android:icon="@drawable/ic_settings_recents"/> -->
-
         <!-- Notifications
         <com.bianca.settings.preferences.CardviewPreference
             android:key="notifications_category"
