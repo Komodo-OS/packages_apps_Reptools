@@ -20,6 +20,8 @@ import android.content.Context;
 import android.content.ContentResolver;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.graphics.Color;
+import android.os.UserHandle;
 import androidx.preference.SwitchPreference;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
@@ -35,6 +37,8 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
 
 import com.android.settings.R;
+
+import com.bianca.support.colorpicker.ColorPickerPreference;
 
 public class MonetSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
