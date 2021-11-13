@@ -69,11 +69,11 @@
             android:fragment="com.bianca.settings.fragments.QuickSettings"
             android:icon="@drawable/ic_settings_quicksettings"/>-->
 
-        <!-- Status Bar 
+        <!-- Status Bar -->
         <com.bianca.settings.preferences.CardviewPreference
             android:key="statusbar_category"
             android:title="@string/statusbar_title"
             android:fragment="com.bianca.settings.fragments.StatusbarSettings"
-            android:icon="@drawable/ic_settings_statusbar"/>-->
+            android:icon="@drawable/ic_settings_statusbar"/>
 
 </PreferenceScreen>
