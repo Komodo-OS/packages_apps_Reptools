@@ -31,6 +31,7 @@
     <string name="quicksettings_title">Quick Settings</string>
     <string name="statusbar_title">Status Bar</string>
     <string name="notifications_title">Notifications</string>
+    <string name="network_traffics_category"">Network Traffic</string>
 
     <!-- Double Tap to Sleep Statusbar -->
     <string name="double_tap_sleep_gesture_title">Tap to sleep</string>
