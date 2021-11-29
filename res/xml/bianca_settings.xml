@@ -35,16 +35,18 @@
             android:icon="@drawable/ic_settings_lockscreen"/> -->
 
         <!-- Misc -->
-        <com.bianca.settings.preferences.CardviewPreference
+        <Preference
             android:key="misc_category"
             android:title="@string/misc_title"
+            android:summary="@string/misc_summary"
             android:fragment="com.bianca.settings.fragments.MiscSettings"
             android:icon="@drawable/ic_settings_misc"/>
 
         <!-- Monet -->
-        <com.bianca.settings.preferences.CardviewPreference
+        <Preference
             android:key="monet_category"
             android:title="@string/monet_title"
+            android:summary="@string/monet_summary"
             android:fragment="com.bianca.settings.fragments.MonetSettings"
             android:icon="@drawable/ic_settings_quicksettings"/>
 
@@ -77,9 +79,10 @@
             android:icon="@drawable/ic_settings_quicksettings"/>-->
 
         <!-- Status Bar -->
-        <com.bianca.settings.preferences.CardviewPreference
+        <Preference
             android:key="statusbar_category"
             android:title="@string/statusbar_title"
+            android:summary="@string/statusbar_summary"
             android:fragment="com.bianca.settings.fragments.StatusbarSettings"
             android:icon="@drawable/ic_settings_statusbar"/>
 
