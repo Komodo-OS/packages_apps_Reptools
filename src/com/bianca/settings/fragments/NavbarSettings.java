@@ -31,10 +31,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.android.internal.util.bianca.BiancaUtils;
+
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
 
 import com.android.settings.R;
+import com.bianca.support.preferences.SystemSettingSwitchPreference;
+import com.bianca.support.preferences.SecureSettingSwitchPreference;
+import com.bianca.support.preferences.SystemSettingListPreference;
+
 
 public class NavbarSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
@@ -498,7 +504,7 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
             }
         }
 
-        if (NadUtils.isGestureNavbar() && isNavbarVisible()) {
+        if (BiancaUtils.isGestureNavbar() && isNavbarVisible()) {
             homeCategory.setVisible(false);
             backCategory.setVisible(false);
             menuCategory.setVisible(false);
