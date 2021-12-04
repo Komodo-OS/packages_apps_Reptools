@@ -18,23 +18,27 @@ package com.bianca.settings.fragments;
 
 import android.content.Context;
 import android.content.ContentResolver;
-import android.content.res.Resources;
 import android.os.Bundle;
-import androidx.preference.SwitchPreference;
+import android.os.Handler;
+import android.os.ServiceManager;
+import android.os.UserHandle;
+import android.provider.SearchIndexableResource;
+import android.provider.Settings;
+
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
-import androidx.preference.PreferenceScreen;
 import androidx.preference.PreferenceCategory;
-import androidx.preference.Preference.OnPreferenceChangeListener;
-import android.provider.Settings;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
+import androidx.preference.PreferenceScreen;
+import androidx.preference.SwitchPreference;
 
-import com.android.internal.util.bianca.BiancaUtils;
-
+import com.android.settings.R;
+import com.android.settings.search.BaseSearchIndexProvider;
+import com.android.settings.SettingsPreferenceFragment;
+import com.android.settingslib.search.SearchIndexable;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
+
+import com.android.internal.util.bianca.BiancaUtils;
 
 import com.android.settings.R;
 import com.bianca.support.preferences.SystemSettingSwitchPreference;
@@ -418,7 +422,7 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
 
     }
 
-    public boolean onPreferenceChange(Preference preference, Object newValue) {
+    public boolean onPreferenceChange(Preference preference, Object objValue) {
         final ContentResolver resolver = getActivity().getContentResolver();
 
         if (preference == mNavigationBar) {
@@ -756,7 +760,7 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
             rightVerticalSwipeCategory.setVisible(false);
         }
 
-        if (NadUtils.isThemeEnabled("com.android.internal.systemui.navbar.threebutton")) {
+        if (BiancaUtils.isThemeEnabled("com.android.internal.systemui.navbar.threebutton")) {
             mTimeout.setVisible(false);
             mExtendedSwipe.setVisible(false);
             mBackGesture.setVisible(false);
@@ -764,7 +768,7 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
             rightSwipeCategory.setVisible(false);
             leftVerticalSwipeCategory.setVisible(false);
             rightVerticalSwipeCategory.setVisible(false);
-        } else if (NadUtils.isThemeEnabled("com.android.internal.systemui.navbar.twobutton")) {
+        } else if (BiancaUtils.isThemeEnabled("com.android.internal.systemui.navbar.twobutton")) {
             mTimeout.setVisible(false);
             mExtendedSwipe.setVisible(false);
             mBackGesture.setVisible(false);
@@ -772,7 +776,7 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
             rightSwipeCategory.setVisible(false);
             leftVerticalSwipeCategory.setVisible(false);
             rightVerticalSwipeCategory.setVisible(false);
-        } else if (NadUtils.isGestureNavbar()) {
+        } else if (BiancaUtils.isGestureNavbar()) {
             mTimeout.setVisible(true);
             mExtendedSwipe.setVisible(true);
             mBackGesture.setVisible(true);
