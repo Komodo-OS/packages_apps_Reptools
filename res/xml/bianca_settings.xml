@@ -50,12 +50,13 @@
             android:fragment="com.bianca.settings.fragments.MonetSettings"
             android:icon="@drawable/ic_settings_quicksettings"/>
 
-        <!-- Disabled - Navigation Bar
-        <com.bianca.settings.preferences.CardviewPreference
+        <!-- Navigation Bar -->
+        <Preference
             android:key="navigationbar_category"
             android:title="@string/navbar_title"
+            android:summary="@string/navbar_summary"
             android:fragment="com.bianca.settings.fragments.NavbarSettings"
-            android:icon="@drawable/ic_settings_navbar"/> -->
+            android:icon="@drawable/ic_settings_navbar"/>
 
         <!-- Disabled - Notifications
         <com.bianca.settings.preferences.CardviewPreference

@@ -33,6 +33,8 @@
     <string name="monet_summary">Custom color, white luminance, etc</string>
 
     <string name="navbar_title">Navigation Bar</string>
+    <string name="navbar_summary">Custom actions, layout</string>
+
     <string name="powermenu_title">Power Menu</string>
     <string name="quicksettings_title">Quick Settings</string>
 
