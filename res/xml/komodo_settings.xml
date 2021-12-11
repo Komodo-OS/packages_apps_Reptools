@@ -18,20 +18,20 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title="@string/bianca_settings_title" >
+    android:title="@string/komodo_settings_title" >
 
         <!-- Buttons 
-        <com.bianca.settings.preferences.CardviewPreference
+        <com.komodo.settings.preferences.CardviewPreference
             android:key="buttonsettings_category"
             android:title="@string/button_title"
-            android:fragment="com.bianca.settings.fragments.ButtonSettings"
+            android:fragment="com.komodo.settings.fragments.ButtonSettings"
             android:icon="@drawable/ic_settings_buttons"/>-->
 
         <!-- Disabled - Lock Screen
-        <com.bianca.settings.preferences.CardviewPreference
+        <com.komodo.settings.preferences.CardviewPreference
             android:key="lockscreen_category"
             android:title="@string/lockscreen_title"
-            android:fragment="com.bianca.settings.fragments.LockscreenSettings"
+            android:fragment="com.komodo.settings.fragments.LockscreenSettings"
             android:icon="@drawable/ic_settings_lockscreen"/> -->
 
         <!-- Misc -->
@@ -39,7 +39,7 @@
             android:key="misc_category"
             android:title="@string/misc_title"
             android:summary="@string/misc_summary"
-            android:fragment="com.bianca.settings.fragments.MiscSettings"
+            android:fragment="com.komodo.settings.fragments.MiscSettings"
             android:icon="@drawable/ic_settings_misc"/>
 
         <!-- Monet -->
@@ -47,7 +47,7 @@
             android:key="monet_category"
             android:title="@string/monet_title"
             android:summary="@string/monet_summary"
-            android:fragment="com.bianca.settings.fragments.MonetSettings"
+            android:fragment="com.komodo.settings.fragments.MonetSettings"
             android:icon="@drawable/ic_settings_quicksettings"/>
 
         <!-- Navigation Bar -->
@@ -55,28 +55,28 @@
             android:key="navigationbar_category"
             android:title="@string/navbar_title"
             android:summary="@string/navbar_summary"
-            android:fragment="com.bianca.settings.fragments.NavbarSettings"
+            android:fragment="com.komodo.settings.fragments.NavbarSettings"
             android:icon="@drawable/ic_settings_navbar"/>
 
         <!-- Disabled - Notifications
-        <com.bianca.settings.preferences.CardviewPreference
+        <com.komodo.settings.preferences.CardviewPreference
             android:key="notifications_category"
             android:title="@string/notifications_title"
-            android:fragment="com.bianca.settings.fragments.NotificationSettings"
+            android:fragment="com.komodo.settings.fragments.NotificationSettings"
             android:icon="@drawable/ic_settings_notifications"/> -->
 
         <!-- Power Menu
-        <com.bianca.settings.preferences.CardviewPreference
+        <com.komodo.settings.preferences.CardviewPreference
             android:key="powermenu__category"
             android:title="@string/powermenu_title"
-            android:fragment="com.bianca.settings.fragments.PowermenuSettings"
+            android:fragment="com.komodo.settings.fragments.PowermenuSettings"
             android:icon="@drawable/ic_settings_powermenu"/>-->
 
         <!-- Quick Settings panel
-        <com.bianca.settings.preferences.CardviewPreference
+        <com.komodo.settings.preferences.CardviewPreference
             android:key="quicksettings_category"
             android:title="@string/quicksettings_title"
-            android:fragment="com.bianca.settings.fragments.QuickSettings"
+            android:fragment="com.komodo.settings.fragments.QuickSettings"
             android:icon="@drawable/ic_settings_quicksettings"/>-->
 
         <!-- Status Bar -->
@@ -84,7 +84,7 @@
             android:key="statusbar_category"
             android:title="@string/statusbar_title"
             android:summary="@string/statusbar_summary"
-            android:fragment="com.bianca.settings.fragments.StatusbarSettings"
+            android:fragment="com.komodo.settings.fragments.StatusbarSettings"
             android:icon="@drawable/ic_settings_statusbar"/>
 
 </PreferenceScreen>

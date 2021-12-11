@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.bianca.settings.fragments;
+package com.komodo.settings.fragments;
 
 import android.content.Context;
 import android.content.ContentResolver;
@@ -37,8 +37,8 @@ import com.android.internal.logging.nano.MetricsProto;
 
 import com.android.settings.R;
 
-import com.bianca.support.preferences.CustomSeekBarPreference;
-import com.bianca.support.preferences.SystemSettingSeekBarPreference;
+import com.komodo.support.preferences.CustomSeekBarPreference;
+import com.komodo.support.preferences.SystemSettingSeekBarPreference;
 
 public class StatusbarSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
@@ -50,7 +50,7 @@ public class StatusbarSettings extends SettingsPreferenceFragment implements
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.bianca_settings_statusbar);
+        addPreferencesFromResource(R.xml.komodo_settings_statusbar);
         ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
 
@@ -86,7 +86,7 @@ public class StatusbarSettings extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.BIANCA;
+        return MetricsProto.MetricsEvent.KOMODO;
     }
 
     @Override

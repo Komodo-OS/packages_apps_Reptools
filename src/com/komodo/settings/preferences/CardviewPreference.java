@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.bianca.settings.preferences;
+package com.komodo.settings.preferences;
 
 import android.content.Context;
 import android.content.om.IOverlayManager;

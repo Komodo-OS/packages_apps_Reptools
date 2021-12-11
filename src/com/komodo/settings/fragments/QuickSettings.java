@@ -14,14 +14,12 @@
  * limitations under the License.
  */
 
-package com.bianca.settings.fragments;
+package com.komodo.settings.fragments;
 
 import android.content.Context;
 import android.content.ContentResolver;
 import android.content.res.Resources;
 import android.os.Bundle;
-import android.graphics.Color;
-import android.os.UserHandle;
 import androidx.preference.SwitchPreference;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
@@ -38,33 +36,20 @@ import com.android.internal.logging.nano.MetricsProto;
 
 import com.android.settings.R;
 
-import com.bianca.support.colorpicker.ColorPickerPreference;
-
-public class MonetSettings extends SettingsPreferenceFragment implements
+public class QuickSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
-
-    private String MONET_ENGINE_COLOR_OVERRIDE = "monet_engine_color_override";
-
-    private ColorPickerPreference mMonetColor;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.bianca_settings_monet);
+        addPreferencesFromResource(R.xml.komodo_settings_quicksettings);
         ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
-
-        mMonetColor = (ColorPickerPreference) prefScreen.findPreference(MONET_ENGINE_COLOR_OVERRIDE);
-        int intColor = Settings.Secure.getInt(resolver, MONET_ENGINE_COLOR_OVERRIDE, Color.WHITE);
-        String hexColor = String.format("#%08x", (0xffffff & intColor));
-        mMonetColor.setNewPreviewColor(intColor);
-        mMonetColor.setSummary(hexColor);
-        mMonetColor.setOnPreferenceChangeListener(this);
     }
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.BIANCA;
+        return MetricsProto.MetricsEvent.KOMODO;
     }
 
     @Override
@@ -78,16 +63,6 @@ public class MonetSettings extends SettingsPreferenceFragment implements
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        ContentResolver resolver = getActivity().getContentResolver();
-        if (preference == mMonetColor) {
-            String hex = ColorPickerPreference.convertToARGB(Integer
-                .parseInt(String.valueOf(newValue)));
-            preference.setSummary(hex);
-            int intHex = ColorPickerPreference.convertToColorInt(hex);
-            Settings.Secure.putInt(resolver,
-                MONET_ENGINE_COLOR_OVERRIDE, intHex);
-            return true;
-        }
         return false;
     }
 }

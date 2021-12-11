@@ -1,12 +1,12 @@
-package com.bianca.settings.fragments.navbar;
+package com.komodo.settings.fragments.navbar;
 
 import android.provider.Settings;
 import android.view.View;
 import android.widget.ListView;
 
-import com.bianca.support.preferences.AppPicker;
+import com.komodo.support.preferences.AppPicker;
 
-public class BackDoubleTap extends AppPicker {
+public class AppSwitchDoubleTap extends AppPicker {
 
     @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
@@ -16,9 +16,9 @@ public class BackDoubleTap extends AppPicker {
         String mFriendlyAppString = (String) applist.get(position).loadLabel(packageManager);
 
         Settings.System.putString(
-                getContentResolver(), Settings.System.KEY_BACK_DOUBLE_TAP_CUSTOM_APP, mAppString);
+                getContentResolver(), Settings.System.KEY_APP_SWITCH_DOUBLE_TAP_CUSTOM_APP, mAppString);
         Settings.System.putString(
-                getContentResolver(), Settings.System.KEY_BACK_DOUBLE_TAP_CUSTOM_APP_FR_NAME,
+                getContentResolver(), Settings.System.KEY_APP_SWITCH_DOUBLE_TAP_CUSTOM_APP_FR_NAME,
                 mFriendlyAppString);
         finish();
     }

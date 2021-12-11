@@ -1,12 +1,12 @@
-package com.bianca.settings.fragments.navbar;
+package com.komodo.settings.fragments.navbar;
 
 import android.provider.Settings;
 import android.view.View;
 import android.widget.ListView;
 
-import com.bianca.support.preferences.AppPicker;
+import com.komodo.support.preferences.AppPicker;
 
-public class HomeDoubleTap extends AppPicker {
+public class HomeLongPress extends AppPicker {
 
     @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
@@ -16,9 +16,9 @@ public class HomeDoubleTap extends AppPicker {
         String mFriendlyAppString = (String) applist.get(position).loadLabel(packageManager);
 
         Settings.System.putString(
-                getContentResolver(), Settings.System.KEY_HOME_DOUBLE_TAP_CUSTOM_APP, mAppString);
+                getContentResolver(), Settings.System.KEY_HOME_LONG_PRESS_CUSTOM_APP, mAppString);
         Settings.System.putString(
-                getContentResolver(), Settings.System.KEY_HOME_DOUBLE_TAP_CUSTOM_APP_FR_NAME,
+                getContentResolver(), Settings.System.KEY_HOME_LONG_PRESS_CUSTOM_APP_FR_NAME,
                 mFriendlyAppString);
         finish();
     }

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.bianca.settings.fragments;
+package com.komodo.settings.fragments;
 
 import android.content.Context;
 import android.content.ContentResolver;
@@ -36,20 +36,20 @@ import com.android.internal.logging.nano.MetricsProto;
 
 import com.android.settings.R;
 
-public class QuickSettings extends SettingsPreferenceFragment implements
+public class ButtonSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.bianca_settings_quicksettings);
+        addPreferencesFromResource(R.xml.komodo_settings_button);
         ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
     }
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.BIANCA;
+        return MetricsProto.MetricsEvent.KOMODO;
     }
 
     @Override

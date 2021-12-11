@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.bianca.settings.fragments;
+package com.komodo.settings.fragments;
 
 import android.content.Context;
 import android.content.ContentResolver;
@@ -38,12 +38,12 @@ import com.android.settingslib.search.SearchIndexable;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
 
-import com.android.internal.util.bianca.BiancaUtils;
+import com.android.internal.util.komodo.KomodoUtils;
 
 import com.android.settings.R;
-import com.bianca.support.preferences.SystemSettingSwitchPreference;
-import com.bianca.support.preferences.SecureSettingSwitchPreference;
-import com.bianca.support.preferences.SystemSettingListPreference;
+import com.komodo.support.preferences.SystemSettingSwitchPreference;
+import com.komodo.support.preferences.SecureSettingSwitchPreference;
+import com.komodo.support.preferences.SystemSettingListPreference;
 
 
 public class NavbarSettings extends SettingsPreferenceFragment implements
@@ -161,7 +161,7 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.bianca_settings_navbar);
+        addPreferencesFromResource(R.xml.komodo_settings_navbar);
         final PreferenceScreen prefSet = getPreferenceScreen();
         final ContentResolver resolver = getActivity().getContentResolver();
 
@@ -221,7 +221,7 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
         mBackGesture = (SystemSettingSwitchPreference) findPreference(KEY_BACK_GESTURE_HAPTIC);
 
         mLayoutSettings = (Preference) findPreference(KEY_LAYOUT_SETTINGS);
-        if (BiancaUtils.isGestureNavbar()) {
+        if (KomodoUtils.isGestureNavbar()) {
             prefSet.removePreference(mLayoutSettings);
         }
 
@@ -684,7 +684,7 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
     }
 
     private boolean isNavbarVisible() {
-        boolean defaultToNavigationBar = BiancaUtils.deviceSupportNavigationBar(getActivity());
+        boolean defaultToNavigationBar = KomodoUtils.deviceSupportNavigationBar(getActivity());
         return Settings.System.getInt(getActivity().getContentResolver(),
                 Settings.System.FORCE_SHOW_NAVBAR, defaultToNavigationBar ? 1 : 0) == 1;
     }
@@ -723,7 +723,7 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
             }
         }
 
-        if (BiancaUtils.isGestureNavbar() && isNavbarVisible()) {
+        if (KomodoUtils.isGestureNavbar() && isNavbarVisible()) {
             homeCategory.setVisible(false);
             backCategory.setVisible(false);
             menuCategory.setVisible(false);
@@ -747,7 +747,7 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
             rightVerticalSwipeCategory.setVisible(false);
         }
 
-        if (BiancaUtils.isThemeEnabled("com.android.internal.systemui.navbar.twobutton") && isNavbarVisible()) {
+        if (KomodoUtils.isThemeEnabled("com.android.internal.systemui.navbar.twobutton") && isNavbarVisible()) {
             homeCategory.setEnabled(true);
             backCategory.setEnabled(true);
             menuCategory.setVisible(false);
@@ -760,7 +760,7 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
             rightVerticalSwipeCategory.setVisible(false);
         }
 
-        if (BiancaUtils.isThemeEnabled("com.android.internal.systemui.navbar.threebutton")) {
+        if (KomodoUtils.isThemeEnabled("com.android.internal.systemui.navbar.threebutton")) {
             mTimeout.setVisible(false);
             mExtendedSwipe.setVisible(false);
             mBackGesture.setVisible(false);
@@ -768,7 +768,7 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
             rightSwipeCategory.setVisible(false);
             leftVerticalSwipeCategory.setVisible(false);
             rightVerticalSwipeCategory.setVisible(false);
-        } else if (BiancaUtils.isThemeEnabled("com.android.internal.systemui.navbar.twobutton")) {
+        } else if (KomodoUtils.isThemeEnabled("com.android.internal.systemui.navbar.twobutton")) {
             mTimeout.setVisible(false);
             mExtendedSwipe.setVisible(false);
             mBackGesture.setVisible(false);
@@ -776,7 +776,7 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
             rightSwipeCategory.setVisible(false);
             leftVerticalSwipeCategory.setVisible(false);
             rightVerticalSwipeCategory.setVisible(false);
-        } else if (BiancaUtils.isGestureNavbar()) {
+        } else if (KomodoUtils.isGestureNavbar()) {
             mTimeout.setVisible(true);
             mExtendedSwipe.setVisible(true);
             mBackGesture.setVisible(true);
@@ -791,11 +791,11 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
             }
         }
 
-        if (BiancaUtils.isThemeEnabled("com.android.internal.systemui.navbar.threebutton")) {
+        if (KomodoUtils.isThemeEnabled("com.android.internal.systemui.navbar.threebutton")) {
             mGestureSystemNavigation.setSummary(getString(R.string.legacy_navigation_title));
-        } else if (BiancaUtils.isThemeEnabled("com.android.internal.systemui.navbar.twobutton")) {
+        } else if (KomodoUtils.isThemeEnabled("com.android.internal.systemui.navbar.twobutton")) {
             mGestureSystemNavigation.setSummary(getString(R.string.swipe_up_to_switch_apps_title));
-        } else if (BiancaUtils.isGestureNavbar()) {
+        } else if (KomodoUtils.isGestureNavbar()) {
             mGestureSystemNavigation.setSummary(getString(R.string.edge_to_edge_navigation_title));
         }
     }
@@ -818,6 +818,6 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.BIANCA;
+        return MetricsProto.MetricsEvent.KOMODO;
     }
 }

@@ -19,19 +19,19 @@
     android:title="@string/misc_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <com.bianca.support.preferences.SecureSettingSwitchPreference
+    <com.komodo.support.preferences.SecureSettingSwitchPreference
         android:key="advanced_reboot"
         android:title="@string/global_actions_advanced_reboot_title"
         android:summary="@string/global_actions_advanced_reboot_summary"
         android:defaultValue="false" />
 
-    <com.bianca.support.preferences.GlobalSettingSwitchPreference
+    <com.komodo.support.preferences.GlobalSettingSwitchPreference
         android:key="show_cpu_overlay"
         android:title="@string/show_cpu_info"
         android:summary="@string/show_cpu_info_summary" 
         android:defaultValue="false" />
 
-    <com.bianca.support.preferences.SystemSettingSwitchPreference
+    <com.komodo.support.preferences.SystemSettingSwitchPreference
         android:key="volume_button_music_control"
         android:title="@string/volume_button_music_control_title"
         android:summary="@string/volume_button_music_control_summary"

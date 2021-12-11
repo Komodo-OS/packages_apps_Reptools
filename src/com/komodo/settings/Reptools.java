@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.bianca.settings;
+package com.komodo.settings;
 
 import android.os.Bundle;
 import androidx.preference.Preference;
@@ -26,16 +26,16 @@ import com.android.settings.SettingsPreferenceFragment;
 
 import com.android.internal.logging.nano.MetricsProto;
 
-public class BiancaSettings extends SettingsPreferenceFragment {
+public class Reptools extends SettingsPreferenceFragment {
 
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-        addPreferencesFromResource(R.xml.bianca_settings);
+        addPreferencesFromResource(R.xml.komodo_settings);
     }
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.BIANCA;
+        return MetricsProto.MetricsEvent.KOMODO;
     }
 }

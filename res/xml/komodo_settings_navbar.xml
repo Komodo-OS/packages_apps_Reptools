@@ -40,25 +40,25 @@
             android:targetClass="com.android.systemui.tuner.NavbarActivity" />
     </Preference>
 
-    <com.bianca.support.preferences.SystemSettingSwitchPreference
+    <com.komodo.support.preferences.SystemSettingSwitchPreference
         android:key="swap_navigation_keys"
         android:title="@string/hw_keys_swap_title"
         android:summary="@string/hw_keys_swap_summary"
         android:defaultValue="false" />
 
-    <com.bianca.support.preferences.SystemSettingSwitchPreference
+    <com.komodo.support.preferences.SystemSettingSwitchPreference
         android:key="back_gesture_haptic"
         android:title="@string/back_gesture_haptic_title"
         android:summary="@string/back_gesture_haptic_summary"
         android:defaultValue="false" />
 
-    <com.bianca.support.preferences.SystemSettingSwitchPreference
+    <com.komodo.support.preferences.SystemSettingSwitchPreference
         android:key="back_swipe_extended"
         android:title="@string/back_swipe_extended_title"
         android:summary="@string/back_swipe_extended_summary"
         android:defaultValue="false" />
 
-    <com.bianca.support.preferences.SystemSettingListPreference
+    <com.komodo.support.preferences.SystemSettingListPreference
         android:key="long_back_swipe_timeout"
         android:title="@string/long_back_swipe_timeout_title"
         android:entries="@array/long_back_swipe_timeout_entries"
@@ -177,7 +177,7 @@
             android:summary="">
             <intent android:action="android.intent.action.MAIN"
                 android:targetPackage="com.android.settings"
-                android:targetClass="com.bianca.settings.fragments.navbar.BackLongPress" />
+                android:targetClass="com.komodo.settings.fragments.navbar.BackLongPress" />
         </Preference>
 
         <ListPreference
@@ -192,7 +192,7 @@
             android:summary="">
             <intent android:action="android.intent.action.MAIN"
                 android:targetPackage="com.android.settings"
-                android:targetClass="com.bianca.settings.fragments.navbar.BackDoubleTap" />
+                android:targetClass="com.komodo.settings.fragments.navbar.BackDoubleTap" />
         </Preference>
 
     </PreferenceCategory>
@@ -213,7 +213,7 @@
             android:summary="">
             <intent android:action="android.intent.action.MAIN"
                 android:targetPackage="com.android.settings"
-                android:targetClass="com.bianca.settings.fragments.navbar.HomeLongPress" />
+                android:targetClass="com.komodo.settings.fragments.navbar.HomeLongPress" />
         </Preference>
 
         <ListPreference
@@ -228,7 +228,7 @@
             android:summary="">
             <intent android:action="android.intent.action.MAIN"
                 android:targetPackage="com.android.settings"
-                android:targetClass="com.bianca.settings.fragments.navbar.HomeDoubleTap" />
+                android:targetClass="com.komodo.settings.fragments.navbar.HomeDoubleTap" />
         </Preference>
 
     </PreferenceCategory>
@@ -249,7 +249,7 @@
             android:summary="">
             <intent android:action="android.intent.action.MAIN"
                 android:targetPackage="com.android.settings"
-                android:targetClass="com.bianca.settings.fragments.navbar.AppSwitchLongPress" />
+                android:targetClass="com.komodo.settings.fragments.navbar.AppSwitchLongPress" />
         </Preference>
 
         <ListPreference
@@ -264,7 +264,7 @@
             android:summary="">
             <intent android:action="android.intent.action.MAIN"
                 android:targetPackage="com.android.settings"
-                android:targetClass="com.bianca.settings.fragments.navbar.AppSwitchDoubleTap" />
+                android:targetClass="com.komodo.settings.fragments.navbar.AppSwitchDoubleTap" />
         </Preference>
 
     </PreferenceCategory>
