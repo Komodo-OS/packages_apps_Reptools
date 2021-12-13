@@ -28,10 +28,18 @@ import com.android.internal.logging.nano.MetricsProto;
 
 public class Reptools extends SettingsPreferenceFragment {
 
+    private static final String GAME_SPACE_CATEGORY = "game_space_category";
+
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         addPreferencesFromResource(R.xml.komodo_settings);
+
+        Preference GameSpace = findPreference(GAME_SPACE_CATEGORY);
+        if (!getResources().getBoolean(R.bool.has_game_space_available)) {
+            getPreferenceScreen().removePreference(GameSpace);
+        }
+
     }
 
     @Override
