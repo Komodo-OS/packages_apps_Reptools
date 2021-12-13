@@ -20,20 +20,31 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/komodo_settings_title" >
 
-        <!-- Buttons 
-        <com.komodo.settings.preferences.CardviewPreference
-            android:key="buttonsettings_category"
-            android:title="@string/button_title"
-            android:fragment="com.komodo.settings.fragments.ButtonSettings"
-            android:icon="@drawable/ic_settings_buttons"/>-->
+        <!-- Status Bar -->
+        <Preference
+            android:key="statusbar_category"
+            android:title="@string/statusbar_title"
+            android:summary="@string/statusbar_summary"
+            android:fragment="com.komodo.settings.fragments.StatusbarSettings"
+            android:icon="@drawable/ic_settings_statusbar"/>
 
-        <!-- Disabled - Lock Screen
-        <com.komodo.settings.preferences.CardviewPreference
-            android:key="lockscreen_category"
-            android:title="@string/lockscreen_title"
-            android:fragment="com.komodo.settings.fragments.LockscreenSettings"
-            android:icon="@drawable/ic_settings_lockscreen"/> -->
+        <!-- Navigation Bar -->
+        <Preference
+            android:key="navigationbar_category"
+            android:title="@string/navbar_title"
+            android:summary="@string/navbar_summary"
+            android:fragment="com.komodo.settings.fragments.NavbarSettings"
+            android:icon="@drawable/ic_settings_navbar"/>
 
+        <!-- Monet -->
+        <Preference
+            android:key="monet_category"
+            android:title="@string/monet_title"
+            android:summary="@string/monet_summary"
+            android:fragment="com.komodo.settings.fragments.MonetSettings"
+            android:icon="@drawable/ic_settings_quicksettings"/>
+
+        <!-- Game Space -->
         <Preference
             android:key="game_space_category"
             android:icon="@drawable/ic_game_space"
@@ -56,21 +67,19 @@
             android:fragment="com.komodo.settings.fragments.MiscSettings"
             android:icon="@drawable/ic_settings_misc"/>
 
-        <!-- Monet -->
-        <Preference
-            android:key="monet_category"
-            android:title="@string/monet_title"
-            android:summary="@string/monet_summary"
-            android:fragment="com.komodo.settings.fragments.MonetSettings"
-            android:icon="@drawable/ic_settings_quicksettings"/>
+        <!-- Buttons 
+        <com.komodo.settings.preferences.CardviewPreference
+            android:key="buttonsettings_category"
+            android:title="@string/button_title"
+            android:fragment="com.komodo.settings.fragments.ButtonSettings"
+            android:icon="@drawable/ic_settings_buttons"/>-->
 
-        <!-- Navigation Bar -->
-        <Preference
-            android:key="navigationbar_category"
-            android:title="@string/navbar_title"
-            android:summary="@string/navbar_summary"
-            android:fragment="com.komodo.settings.fragments.NavbarSettings"
-            android:icon="@drawable/ic_settings_navbar"/>
+        <!-- Disabled - Lock Screen
+        <com.komodo.settings.preferences.CardviewPreference
+            android:key="lockscreen_category"
+            android:title="@string/lockscreen_title"
+            android:fragment="com.komodo.settings.fragments.LockscreenSettings"
+            android:icon="@drawable/ic_settings_lockscreen"/> -->
 
         <!-- Disabled - Notifications
         <com.komodo.settings.preferences.CardviewPreference
@@ -92,13 +101,5 @@
             android:title="@string/quicksettings_title"
             android:fragment="com.komodo.settings.fragments.QuickSettings"
             android:icon="@drawable/ic_settings_quicksettings"/>-->
-
-        <!-- Status Bar -->
-        <Preference
-            android:key="statusbar_category"
-            android:title="@string/statusbar_title"
-            android:summary="@string/statusbar_summary"
-            android:fragment="com.komodo.settings.fragments.StatusbarSettings"
-            android:icon="@drawable/ic_settings_statusbar"/>
 
 </PreferenceScreen>
