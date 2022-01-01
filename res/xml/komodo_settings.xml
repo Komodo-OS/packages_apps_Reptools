@@ -28,6 +28,14 @@
             android:fragment="com.komodo.settings.fragments.StatusbarSettings"
             android:icon="@drawable/ic_settings_statusbar"/>
 
+        <!-- Notifications -->
+        <Preference
+            android:key="notifications_category"
+            android:title="@string/notifications_title"
+            android:summary="@string/notifications_summary"
+            android:fragment="com.komodo.settings.fragments.NotificationSettings"
+            android:icon="@drawable/ic_settings_notifications"/>
+
         <!-- Navigation Bar -->
         <Preference
             android:key="navigationbar_category"
@@ -80,13 +88,6 @@
             android:title="@string/lockscreen_title"
             android:fragment="com.komodo.settings.fragments.LockscreenSettings"
             android:icon="@drawable/ic_settings_lockscreen"/> -->
-
-        <!-- Disabled - Notifications
-        <com.komodo.settings.preferences.CardviewPreference
-            android:key="notifications_category"
-            android:title="@string/notifications_title"
-            android:fragment="com.komodo.settings.fragments.NotificationSettings"
-            android:icon="@drawable/ic_settings_notifications"/> -->
 
         <!-- Power Menu
         <com.komodo.settings.preferences.CardviewPreference
