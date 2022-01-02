@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright © 2018 The Superior OS Project
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="komodo_settings_title">Reptools</string>
+    <string name="komodo_dashboard_summary">Sesuaikan rom Anda</string>
+    <!-- Categories -->
+    <string name="animations_title">Animasi</string>
+    <string name="interface_title">Antarmuka</string>
+    <string name="button_title">Tombol</string>
+    <string name="gestures_title">Gestur</string>
+    <string name="lockscreen_title">Layar Kunci</string>
+    <string name="game_space_title">Ruang Permainan</string>
+    <string name="game_space_summary">Tingkatkan pengalaman permainan Anda</string>
+    <string name="misc_title">Lain-lain</string>
+    <string name="misc_summary">Mulai ulang lanjutan, kontrol pemutaran</string>
+    <string name="monet_title">Mesin Monet</string>
+    <string name="monet_summary">Warna khusus, pencahayaan putih, dll</string>
+    <string name="navbar_title">Bilah Navigasi</string>
+    <string name="navbar_summary">Tindakan kustom, tata letak</string>
+    <string name="powermenu_title">Menu Daya</string>
+    <string name="quicksettings_title">Setelan Cepat</string>
+    <string name="statusbar_title">Bilah Status</string>
+    <string name="statusbar_summary">Lalu lintas jaringan, ketuk untuk tidur</string>
+    <string name="notifications_title">Notifikasi</string>
+    <string name="network_traffics_category">Lalu Lintas Jaringan</string>
+    <!-- Double Tap to Sleep Statusbar -->
+    <string name="double_tap_sleep_gesture_title">Ketuk untuk tidur</string>
+    <string name="double_tap_sleep_gesture_summary">Ketuk dua kali pada bilah status untuk mematikan layar</string>
+    <!-- Global Actions -->
+    <string name="global_actions_advanced_reboot_title">Aktifkan mulai ulang lanjutan</string>
+    <string name="global_actions_advanced_reboot_summary">Tampilkan opsi untuk mode pemulihan dan bootloader di menu daya</string>
+    <!-- Volume rocker music control -->
+    <string name="volume_button_music_control_title">Kontrol Pemutaran</string>
+    <string name="volume_button_music_control_summary">Saat layar mati, menekan lama tombol volume akan melewatkan trek musik</string>
+    <!-- Network Traffic -->
+    <string name="network_traffic_state_title">Tampilkan lalu lintas jaringan</string>
+    <string name="network_traffic_location_title">Lokasi</string>
+    <string name="network_traffic_disabled">Dimatikan</string>
+    <string name="network_traffic_statusbar">Bilah status</string>
+    <string name="network_traffic_qs_header">Bagian atas Setelan Cepat</string>
+    <string name="network_traffic_mode_title">Mode tampilan</string>
+    <string name="network_traffic_dynamic">Dinamis</string>
+    <string name="network_traffic_download">Unduh</string>
+    <string name="network_traffic_upload">Unggah</string>
+    <string name="network_traffic_autohide_threshold_title">Sembunyikan otomatis ambang batas</string>
+    <string name="network_traffic_refresh_interval_title">Selang waktu penyegaran</string>
+    <!-- Monet Engine -->
+    <string name="monet_engine_custom_color_title">Gunakan warna kustom</string>
+    <string name="monet_engine_custom_color_summary">Gunakan warna kustom untuk mesin monet alih-alih warna wallpaper</string>
+    <string name="monet_engine_color_override_title">Warna kustom</string>
+    <string name="monet_engine_white_luminance_user_title">Pencahayaan putih</string>
+    <string name="monet_engine_accurate_shades_title">Gunakan nuansa yang akurat</string>
+    <string name="monet_engine_chroma_factor_title">Faktor kroma</string>
+    <string name="monet_engine_linear_lightness_title">Gunakan cahaya linier</string>
+    <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
+    <string name="show_cpu_info">Tampilkan info CPU</string>
+    <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
+    <string name="show_cpu_info_summary">Hamparan layar menampilkan info CPU saat ini</string>
+    <!-- Navigation bar -->
+    <string name="navigation_bar_title">Tombol bilah navigasi</string>
+    <string name="navigation_bar_summary">Aktifkan tombol navigasi pada layar</string>
+    <string name="home_key_title">Tombol beranda</string>
+    <string name="back_key_title">Tombol kembali</string>
+    <string name="menu_key_title">Tombol menu</string>
+    <string name="assist_key_title">Tombol bantu</string>
+    <string name="app_switch_key_title">Tombol terkini</string>
+    <string name="camera_key_title">Tombol kamera</string>
+    <string name="short_press_title">Tindakan tekan pendek tombol</string>
+    <string name="long_press_title">Tindakan tekan lama tombol</string>
+    <string name="double_tap_title">Tindakan ketuk dua kali</string>
+    <string name="app_picker_dialog_title">Pilih aplikasi</string>
+    <string name="long_press_custom_app_title">Tekan lama aplikasi kustom</string>
+    <string name="double_tap_custom_app_title">Ketuk ganda aplikasi kustom</string>
+    <!-- Custom actions -->
+    <string name="action_nothing">Tidak ada tindakan</string>
+    <string name="action_menu">Menu</string>
+    <string name="action_app_switch">Baru digunakan</string>
+    <string name="action_search">Asisten</string>
+    <string name="action_voice_search">Pencarian suara</string>
+    <string name="action_launch_camera">Kamera</string>
+    <string name="action_last_app">Aplikasi terakhir</string>
+    <string name="action_splitscreen">Layar terpisah</string>
+    <string name="action_flashlight">Lampu Senter</string>
+    <string name="action_clear_notifications">Bersihkan notifikasi</string>
+    <string name="action_volume_panel">Panel volume</string>
+    <string name="action_screen_off">Layar mati</string>
+    <string name="action_notifications">Notifikasi</string>
+    <string name="action_power_menu">Menu daya</string>
+    <string name="action_screenshot">Tangkapan layar</string>
+    <string name="action_qs_panel">Panel QS</string>
+    <string name="action_app_action">Aplikasi</string>
+    <string name="action_ringer_modes">Mode dering</string>
+    <string name="kill_app">Matikan aplikasi</string>
+    <string name="partial_screenshot">Tangkapan layar sebagian</string>
+    <!-- Long back swipe options -->
+    <string name="right_swipe_key_title">Usap ke kanan</string>
+    <string name="left_swipe_key_title">Usap ke kiri</string>
+    <string name="long_back_swipe_timeout_title">Batas waktu usap panjang</string>
+    <string name="left_swipe_actions_title">Tindakan usap panjang ke kiri</string>
+    <string name="left_swipe_app_action_title">Pilih aplikasi usap panjang ke kiri</string>
+    <string name="right_swipe_actions_title">Tindakan usap panjang ke kanan</string>
+    <string name="left_vertical_swipe_key_title">Geser ke kiri L</string>
+    <string name="right_vertical_swipe_key_title">Geser ke kanan L</string>
+    <string name="right_swipe_app_action_title">Pilih aplikasi usap panjang ke kanan</string>
+    <string name="left_vertical_swipe_actions_title">Tindakan usap ke kiri vertikal</string>
+    <string name="left_vertical_swipe_app_action_title">Pilih aplikasi usap ke kiri vertikal</string>
+    <string name="right_vertical_swipe_actions_title">Tindakan usap ke kanan vertikal</string>
+    <string name="right_vertical_swipe_app_action_title">Pilih aplikasi usap ke kanan vertikal</string>
+    <string name="gesture_nav_tweaks_footer_info">Untuk memilih aktivitas aplikasi tertentu untuk tindakan, tekan lama pada aplikasi apa pun di pemilih aplikasi.\n\nJika peluncur ditampilkan, lakukan gesek di bagian paling bawah layar untuk memicu tindakan.</string>
+    <string name="back_swipe_app_select_summary">Pilih aplikasi yang akan diluncurkan dengan gestur kembali</string>
+    <string name="back_swipe_extended_title">Tindakan menggesek yang diperpanjang</string>
+    <string name="back_swipe_extended_summary">Tindakan pemicu pada gesekan yang lebih luas (lebih dari setengah ukuran tampilan), atau gesekan L (cukup panjang secara vertikal)</string>
+    <string name="back_gesture_haptic_title">Umpan balik sentuhan</string>
+    <string name="back_gesture_haptic_summary">Aktifkan efek getaran pada tombol gestur kembali</string>
+    <!-- HW keys -->
+    <string name="hw_keys_swap_title">Tukar tombol fisik</string>
+    <string name="hw_keys_swap_summary">Tukar urutan tombol terkini dan kembali</string>
+    <!-- Statusbar Tuner -->
+    <string name="statusbar_items_title">Ikon Bilah Status</string>
+    <string name="statusbar_items_summary">Tombol visibilitas ikon di bilah status</string>
+    <!-- Navigation bar -->
+    <string name="navigation_bar_layout_title">Tata letak</string>
+    <string name="navigation_bar_layout_summary">Sesuaikan tata letak bilah navigasi</string>
+    <!-- Combined signal icons in status bar -->
+    <string name="combined_status_bar_signal_icons">Ikon sinyal gabungan</string>
+    <string name="combined_status_bar_signal_icons_summary">Aktifkan ikon sinyal gabungan di bilah status.\nMemerlukan mulai ulang SistemUI</string>
+</resources>
