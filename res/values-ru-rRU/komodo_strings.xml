@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright © 2018 The Superior OS Project
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="komodo_settings_title">Reptools</string>
+    <string name="komodo_dashboard_summary">Настройте вашу систему</string>
+    <!-- Categories -->
+    <string name="animations_title">Анимации</string>
+    <string name="interface_title">Интерфейс</string>
+    <string name="button_title">Кнопки</string>
+    <string name="gestures_title">Жесты</string>
+    <string name="lockscreen_title">Экран блокировки</string>
+    <string name="game_space_title">Игровой режим</string>
+    <string name="game_space_summary">Улучшите свой игровой опыт</string>
+    <string name="misc_title">Разное</string>
+    <string name="misc_summary">Расширенная перезагрузка, управление воспроизведением</string>
+    <string name="monet_title">Механизм Monet</string>
+    <string name="monet_summary">Пользовательский цвет, белое свечение и т.д.</string>
+    <string name="navbar_title">Панель навигации</string>
+    <string name="navbar_summary">Пользовательские действия, расположение</string>
+    <string name="powermenu_title">Меню кнопки питания</string>
+    <string name="quicksettings_title">Быстрые настройки</string>
+    <string name="statusbar_title">Строка состояния</string>
+    <string name="statusbar_summary">Сетевой трафик, нажмите для сна</string>
+    <string name="notifications_title">Уведомления</string>
+    <string name="network_traffics_category">Сетевой трафик</string>
+    <!-- Double Tap to Sleep Statusbar -->
+    <string name="double_tap_sleep_gesture_title">Выключать экран при двойном нажатии</string>
+    <string name="double_tap_sleep_gesture_summary">Дважды коснитесь в любом месте строки состояния, чтобы перевести устройство в спящий режим</string>
+    <!-- Global Actions -->
+    <string name="global_actions_advanced_reboot_title">Включить расширенную перезагрузку</string>
+    <string name="global_actions_advanced_reboot_summary">Показать опции для рекавери и загрузчика в меню кнопки питания</string>
+    <!-- Volume rocker music control -->
+    <string name="volume_button_music_control_title">Управление воспроизведением</string>
+    <string name="volume_button_music_control_summary">Переключать треки долгим нажатием кнопок громкости при выключенном экране</string>
+    <!-- Network Traffic -->
+    <string name="network_traffic_state_title">Индикатор трафика</string>
+    <string name="network_traffic_location_title">Расположение</string>
+    <string name="network_traffic_disabled">Отключен</string>
+    <string name="network_traffic_statusbar">В строке состояния</string>
+    <string name="network_traffic_qs_header">В заголовке быстрых настроек</string>
+    <string name="network_traffic_mode_title">Режим отображения</string>
+    <string name="network_traffic_dynamic">Динамический</string>
+    <string name="network_traffic_download">Входящий</string>
+    <string name="network_traffic_upload">Исходящий</string>
+    <string name="network_traffic_autohide_threshold_title">Порог неактивности</string>
+    <string name="network_traffic_refresh_interval_title">Интервал обновления</string>
+    <!-- Monet Engine -->
+    <string name="monet_engine_custom_color_title">Использовать собственный цвет</string>
+    <string name="monet_engine_custom_color_summary">Использовать пользовательский цвет для Monet вместо цвета обоев</string>
+    <string name="monet_engine_color_override_title">Пользовательский цвет</string>
+    <string name="monet_engine_white_luminance_user_title">Белое свечение</string>
+    <string name="monet_engine_accurate_shades_title">Использовать точные оттенки</string>
+    <string name="monet_engine_chroma_factor_title">Фактор интенсивности</string>
+    <string name="monet_engine_linear_lightness_title">Использовать линейное освещение</string>
+    <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
+    <string name="show_cpu_info">Показать информацию о ЦП</string>
+    <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
+    <string name="show_cpu_info_summary">Показывать поверх экрана частоты ядер, говерноры и температуру ЦП</string>
+    <!-- Navigation bar -->
+    <string name="navigation_bar_title">Панель навигации</string>
+    <string name="navigation_bar_summary">Включить наэкранные кнопки навигации</string>
+    <string name="home_key_title">Кнопка \"Домой\"</string>
+    <string name="back_key_title">Кнопка \"Назад\"</string>
+    <string name="menu_key_title">Кнопка \"Меню\"</string>
+    <string name="assist_key_title">Кнопка \"Ассистент\"</string>
+    <string name="app_switch_key_title">Кнопка \"Недавние\"</string>
+    <string name="camera_key_title">Кнопка \"Камера\"</string>
+    <string name="short_press_title">Действие при коротком нажатии</string>
+    <string name="long_press_title">Действие при длительном нажатии</string>
+    <string name="double_tap_title">Действие при двойном нажатии</string>
+    <string name="app_picker_dialog_title">Выберите приложение</string>
+    <string name="long_press_custom_app_title">Долгое нажатия для открытия пользовательского приложения</string>
+    <string name="double_tap_custom_app_title">Двойное нажатие для открытия пользовательского приложения</string>
+    <!-- Custom actions -->
+    <string name="action_nothing">Не задано</string>
+    <string name="action_menu">Меню</string>
+    <string name="action_app_switch">Недавние</string>
+    <string name="action_search">Ассистент</string>
+    <string name="action_voice_search">Голосовой поиск</string>
+    <string name="action_launch_camera">Камера</string>
+    <string name="action_last_app">Последнее приложение</string>
+    <string name="action_splitscreen">Разделение экрана</string>
+    <string name="action_flashlight">Фонарик</string>
+    <string name="action_clear_notifications">Очистить уведомления</string>
+    <string name="action_volume_panel">Панель громкости</string>
+    <string name="action_screen_off">Выключить экран</string>
+    <string name="action_notifications">Уведомления</string>
+    <string name="action_power_menu">Меню кнопки питания</string>
+    <string name="action_screenshot">Скриншот</string>
+    <string name="action_qs_panel">Панель быстрых настроек</string>
+    <string name="action_app_action">Приложение</string>
+    <string name="action_ringer_modes">Режим звонка</string>
+    <string name="kill_app">Принудительно закрыть приложение</string>
+    <string name="partial_screenshot">Частичный скриншот</string>
+    <!-- Long back swipe options -->
+    <string name="right_swipe_key_title">Свайп вправо</string>
+    <string name="left_swipe_key_title">Свайп влево</string>
+    <string name="long_back_swipe_timeout_title">Длительность долгого свайпа</string>
+    <string name="left_swipe_actions_title">Действие при длинном свайпе влево</string>
+    <string name="left_swipe_app_action_title">Выбрать приложение для запуска при длинном свайпе влево</string>
+    <string name="right_swipe_actions_title">Действие при длинном свайпе вправо</string>
+    <string name="left_vertical_swipe_key_title">Левый L-свайп</string>
+    <string name="right_vertical_swipe_key_title">Правый L-свайп</string>
+    <string name="right_swipe_app_action_title">Выбрать приложение для запуска при длинном свайпе вправо</string>
+    <string name="left_vertical_swipe_actions_title">Действие вертикального свайпа слева</string>
+    <string name="left_vertical_swipe_app_action_title">Выберите приложение для запуска вертикальным свайпом слева</string>
+    <string name="right_vertical_swipe_actions_title">Действие вертикального свайпа справа</string>
+    <string name="right_vertical_swipe_app_action_title">Выберите приложение для открытия вертикальным свайпом справа</string>
+    <string name="gesture_nav_tweaks_footer_info">Чтобы выбрать конкретное активити приложения для действия, нажмите и удерживайте любое приложение в средстве выбора приложений.\n\nВ лаунчере проведите пальцем в самой нижней области экрана, чтобы запустить действие.</string>
+    <string name="back_swipe_app_select_summary">Выберите приложение для запуска жестом \"Назад\"</string>
+    <string name="back_swipe_extended_title">Действие при длинном свайпе</string>
+    <string name="back_swipe_extended_summary">Запуск действия при длинном свайпе (более чем на половину экрана) или L-свайпе (от края и вверх)</string>
+    <string name="back_gesture_haptic_title">Виброотклик</string>
+    <string name="back_gesture_haptic_summary">Включить вибрацию для жеста \"Назад\"</string>
+    <!-- HW keys -->
+    <string name="hw_keys_swap_title">Поменять местами аппаратные кнопки</string>
+    <string name="hw_keys_swap_summary">Поменять местами кнопки \"Недавние\" и \"Назад\"</string>
+    <!-- Statusbar Tuner -->
+    <string name="statusbar_items_title">Значки в строке состояния</string>
+    <string name="statusbar_items_summary">Переключение видимости значков в строке состояния</string>
+    <!-- Navigation bar -->
+    <string name="navigation_bar_layout_title">Компоновка</string>
+    <string name="navigation_bar_layout_summary">Настройка расположения кнопок панели навигации</string>
+    <!-- Combined signal icons in status bar -->
+    <string name="combined_status_bar_signal_icons">Комбинированные значки сигнала</string>
+    <string name="combined_status_bar_signal_icons_summary">Включить комбинированные значки сигнала в строке состояния.\nТребует перезапуска интерфейса</string>
+</resources>
