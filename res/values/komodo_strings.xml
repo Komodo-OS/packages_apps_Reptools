@@ -24,7 +24,9 @@
     <string name="interface_title">Interface</string>
     <string name="button_title">Buttons</string>
     <string name="gestures_title">Gestures</string>
+
     <string name="lockscreen_title">Lock Screen</string>
+    <string name="lockscreen_summary">Ripple effect, secure QS tiles</string>
 
     <string name="game_space_title">Game Space</string>
     <string name="game_space_summary">Enhance your gaming experience</string>

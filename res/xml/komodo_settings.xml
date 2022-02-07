@@ -44,6 +44,14 @@
             android:fragment="com.komodo.settings.fragments.NavbarSettings"
             android:icon="@drawable/ic_settings_navbar"/>
 
+        <!-- Lockscreen -->
+        <Preference
+            android:key="lockscreen_category"
+            android:title="@string/lockscreen_title"
+            android:summary="@string/lockscreen_summary"
+            android:fragment="com.komodo.settings.fragments.LockscreenSettings"
+            android:icon="@drawable/ic_settings_lockscreen"/>
+
         <!-- Monet -->
         <Preference
             android:key="monet_category"
@@ -81,13 +89,6 @@
             android:title="@string/button_title"
             android:fragment="com.komodo.settings.fragments.ButtonSettings"
             android:icon="@drawable/ic_settings_buttons"/>-->
-
-        <!-- Disabled - Lock Screen
-        <com.komodo.settings.preferences.CardviewPreference
-            android:key="lockscreen_category"
-            android:title="@string/lockscreen_title"
-            android:fragment="com.komodo.settings.fragments.LockscreenSettings"
-            android:icon="@drawable/ic_settings_lockscreen"/> -->
 
         <!-- Power Menu
         <com.komodo.settings.preferences.CardviewPreference
