@@ -52,13 +52,13 @@
             android:fragment="com.komodo.settings.fragments.LockscreenSettings"
             android:icon="@drawable/ic_settings_lockscreen"/>
 
-        <!-- Monet -->
+        <!-- Monet
         <Preference
             android:key="monet_category"
             android:title="@string/monet_title"
             android:summary="@string/monet_summary"
             android:fragment="com.komodo.settings.fragments.MonetSettings"
-            android:icon="@drawable/ic_settings_quicksettings"/>
+            android:icon="@drawable/ic_settings_quicksettings"/> -->
 
         <!-- Game Space -->
         <Preference
