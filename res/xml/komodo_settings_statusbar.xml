@@ -33,15 +33,9 @@
            android:targetClass="com.android.systemui.tuner.TunerActivity" />
     </Preference>
 
-    <!-- Combined signal icons -->
-    <com.komodo.support.preferences.SecureSettingSwitchPreference
-        android:key="show_combined_status_bar_signal_icons"
-        android:title="@string/combined_status_bar_signal_icons"
-        android:summary="@string/combined_status_bar_signal_icons_summary"
-        android:defaultValue="false" />
-
     <PreferenceCategory
         android:title="@string/network_traffics_category" >
+
 
         <ListPreference
             android:key="network_traffic_location"
