@@ -90,12 +90,12 @@
             android:fragment="com.komodo.settings.fragments.ButtonSettings"
             android:icon="@drawable/ic_settings_buttons"/>
 
-        <!-- Power Menu
+        <!-- Power Menu -->
         <com.komodo.settings.preferences.CardviewPreference
             android:key="powermenu__category"
             android:title="@string/powermenu_title"
             android:fragment="com.komodo.settings.fragments.PowermenuSettings"
-            android:icon="@drawable/ic_settings_powermenu"/>-->
+            android:icon="@drawable/ic_settings_powermenu"/>
 
         <!-- Quick Settings panel
         <com.komodo.settings.preferences.CardviewPreference
