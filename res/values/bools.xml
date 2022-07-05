@@ -17,4 +17,7 @@
 <resources>
     <!-- Whether to display Game space -->
     <bool name="has_game_space_available">false</bool>
+
+    <!-- Whether to display fingerprint category -->
+    <bool name="has_fingerprint_prefs">true</bool>
 </resources>

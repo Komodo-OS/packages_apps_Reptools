@@ -34,17 +34,42 @@ import android.view.ViewGroup;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
 
+import com.android.internal.util.komodo.KomodoUtils;
+
 import com.android.settings.R;
+import com.android.settings.search.BaseSearchIndexProvider;
+import com.android.settings.SettingsPreferenceFragment;
+import com.android.settingslib.search.SearchIndexable;
+
+import com.komodo.support.preferences.SystemSettingSwitchPreference;
+import com.komodo.support.preferences.SecureSettingSwitchPreference;
 
 public class PowermenuSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
+
+    private static final String FINGERPRINT_SUCCESS_VIB = "fingerprint_success_vib";
+    private static final String FINGERPRINT_ERROR_VIB = "fingerprint_error_vib";
+
+    private SystemSettingSwitchPreference mFingerprintSuccessVib;
+    private SystemSettingSwitchPreference mFingerprintErrorVib;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.komodo_settings_powermenu);
-        ContentResolver resolver = getActivity().getContentResolver();
+
+        final ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
+
+        mFingerprintSuccessVib = findPreference(FINGERPRINT_SUCCESS_VIB);
+        mFingerprintSuccessVib.setChecked((Settings.System.getInt(getContentResolver(),
+                        Settings.System.FP_SUCCESS_VIBRATE, 1) == 1));
+        mFingerprintSuccessVib.setOnPreferenceChangeListener(this);
+
+        mFingerprintErrorVib = findPreference(FINGERPRINT_ERROR_VIB);
+        mFingerprintErrorVib.setChecked((Settings.System.getInt(getContentResolver(),
+                        Settings.System.FP_ERROR_VIBRATE, 1) == 1));
+        mFingerprintErrorVib.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -63,6 +88,18 @@ public class PowermenuSettings extends SettingsPreferenceFragment implements
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+        final ContentResolver resolver = getActivity().getContentResolver();
+        if (preference == mFingerprintSuccessVib) {
+            boolean value = (Boolean) newValue;
+             Settings.System.putInt(resolver,
+                    Settings.System.FP_SUCCESS_VIBRATE, value ? 1 : 0);
+            return true;
+        } else if (preference == mFingerprintErrorVib) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putInt(resolver,
+                    Settings.System.FP_ERROR_VIBRATE, value ? 1 : 0);
+            return true;
+        }
         return false;
     }
 }

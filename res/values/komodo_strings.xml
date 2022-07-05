@@ -191,4 +191,10 @@
     <string name="back_gesture_arrow_message">Back gesture animation</string>
     <string name="back_gesture_arrow_summary">Show an animated arrow for back gesture</string>
 
+    <!-- Fingerprint authentication vibration -->
+    <string name="fprint_sucess_vib_title">Fingerprint success vibration</string>
+    <string name="fprint_sucess_vib_summary">Vibrate on successful fingerprint authentication</string>
+    <string name="fprint_error_vib_title">Fingerprint error vibration</string>
+    <string name="fprint_error_vib_summary">Vibrate on failed fingerprint authentication</string>
+
 </resources>
