@@ -202,4 +202,8 @@
     <string name="use_games_spoof_summary">Spoof your device as different model for specific games to unlock higher FPS</string>
     <string name="games_spoof_toast">Restart the App for it to take effect</string>
 
+    <!-- Show VoLTE icon on statusbar -->
+    <string name="volte_icon_title">VoLTE icon</string>
+    <string name="volte_icon_summary">Display VoLTE icon</string>
+
 </resources>
