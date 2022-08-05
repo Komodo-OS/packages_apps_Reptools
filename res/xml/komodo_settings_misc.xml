@@ -54,4 +54,10 @@
         android:entryValues="@array/torch_power_button_gesture_values"
         android:defaultValue="0" />
 
+   <com.komodo.support.preferences.SystemSettingSwitchPreference
+        android:key="use_games_spoof"
+        android:title="@string/use_games_spoof_title"
+        android:summary="@string/use_games_spoof_summary"
+        android:persistent="false" />
+
 </PreferenceScreen>

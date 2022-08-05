@@ -197,4 +197,9 @@
     <string name="fprint_error_vib_title">Fingerprint error vibration</string>
     <string name="fprint_error_vib_summary">Vibrate on failed fingerprint authentication</string>
 
+    <!-- Unlock FPS for specific games -->
+    <string name="use_games_spoof_title">Unlock higher FPS in games</string>
+    <string name="use_games_spoof_summary">Spoof your device as different model for specific games to unlock higher FPS</string>
+    <string name="games_spoof_toast">Restart the App for it to take effect</string>
+
 </resources>

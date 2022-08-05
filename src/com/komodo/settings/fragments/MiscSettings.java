@@ -20,6 +20,7 @@ import android.content.Context;
 import android.content.ContentResolver;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.os.SystemProperties;
 import androidx.preference.SwitchPreference;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
@@ -30,6 +31,7 @@ import android.provider.Settings;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
@@ -39,12 +41,21 @@ import com.android.settings.R;
 public class MiscSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
+    private static final String KEY_SPOOF_GAMES = "use_games_spoof";
+    private static final String SYS_SPOOF_GAMES = "persist.sys.pixelprops.games";
+
+    private SwitchPreference mSpoofGames;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.komodo_settings_misc);
-        ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
+        final ContentResolver resolver = getActivity().getContentResolver();
+
+        mSpoofGames = (SwitchPreference) findPreference(KEY_SPOOF_GAMES);
+        mSpoofGames.setChecked(SystemProperties.getBoolean(SYS_SPOOF_GAMES, false));
+        mSpoofGames.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -63,6 +74,15 @@ public class MiscSettings extends SettingsPreferenceFragment implements
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+        final ContentResolver resolver = getActivity().getContentResolver();
+        if (preference == mSpoofPhotos) {
+            String value = ((Boolean) newValue) ? "1" : "0";
+            SystemProperties.set(SYS_SPOOF_GAMES, value);
+            Toast.makeText(getActivity(),
+                    (R.string.games_spoof_toast),
+                    Toast.LENGTH_LONG).show();
+            return true;
+        }
         return false;
     }
 }

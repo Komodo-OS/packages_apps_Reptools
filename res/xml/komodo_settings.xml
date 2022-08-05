@@ -84,14 +84,14 @@
             android:icon="@drawable/ic_settings_misc"/>
 
         <!-- Buttons --> 
-        <com.komodo.settings.preferences.CardviewPreference
+        <Preference
             android:key="buttonsettings_category"
             android:title="@string/button_title"
             android:fragment="com.komodo.settings.fragments.ButtonSettings"
             android:icon="@drawable/ic_settings_buttons"/>
 
         <!-- Power Menu -->
-        <com.komodo.settings.preferences.CardviewPreference
+        <Preference
             android:key="powermenu__category"
             android:title="@string/powermenu_title"
             android:fragment="com.komodo.settings.fragments.PowermenuSettings"
