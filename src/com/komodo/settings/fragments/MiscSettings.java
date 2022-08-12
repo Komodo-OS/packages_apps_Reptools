@@ -75,7 +75,7 @@ public class MiscSettings extends SettingsPreferenceFragment implements
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         final ContentResolver resolver = getActivity().getContentResolver();
-        if (preference == mSpoofPhotos) {
+        if (preference == mSpoofGames) {
             String value = ((Boolean) newValue) ? "1" : "0";
             SystemProperties.set(SYS_SPOOF_GAMES, value);
             Toast.makeText(getActivity(),
