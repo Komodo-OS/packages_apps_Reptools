@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Reptools -->
+    <string name="reptools_title">Reptools</string>
+    <string name="reptools_summary">Get your reptile here</string>
+</resources>
