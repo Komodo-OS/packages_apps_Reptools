@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginHorizontal="@dimen/komodo_card_side_margin"
+    android:layout_marginTop="@dimen/komodo_vertical_padding"
+    android:layout_marginBottom="@dimen/komodo_vertical_padding"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <org.komodo.settings.utils.KomodoImageBlur
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:elevation="0dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/reptools_header_background_ripple"
+            android:clipToOutline="true"
+            android:src="@drawable/header_reptools"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/komodo_branding_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/reptools_title"
+                style="@style/komodo_reptools_headers_text"/>
+
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

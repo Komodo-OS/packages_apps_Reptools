@@ -4,8 +4,21 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:title="@string/reptools_title">
 
+    <!-- Komodo Branding -->
+    <Preference
+        settings:layout="@layout/header_reptools"
+        android:selectable="false" />
+
     <!-- Status Bar -->
-    <lineageos.preference.LineagePartsPreference
-        android:key="status_bar_settings" />
+    <org.komodo.settings.preferences.KomodoPreference
+        android:key="status_bar_settings"
+        settings:icon_text="􀉨"
+        settings:layout="@layout/reptools_about_card_top" />
+
+    <!-- Button -->
+    <org.komodo.settings.preferences.KomodoPreference
+        android:key="button_settings"
+        settings:icon_text="􀇰"
+        settings:layout="@layout/reptools_about_card_bottom" />
 
 </PreferenceScreen>

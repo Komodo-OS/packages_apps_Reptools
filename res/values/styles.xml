@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Reptools -->
+    <style name="komodo_reptools_headers_text">
+        <item name="android:textSize">50sp</item>
+        <item name="android:textColor">@color/material_dynamic_secondary90</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/sf_pro</item>
+    </style>
+
+</resources>

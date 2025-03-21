@@ -4,4 +4,6 @@
     <!-- Reptools -->
     <string name="reptools_title">Reptools</string>
     <string name="reptools_summary">Get your reptile here</string>
+
+    <string name="reptools_about">About us</string>
 </resources>

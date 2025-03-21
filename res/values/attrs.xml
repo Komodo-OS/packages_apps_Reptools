@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Mendeklarasikan atribut khusus -->
+    <declare-styleable name="KomodoPreference">
+        <attr name="icon_text" format="string"/>
+    </declare-styleable>
+</resources>
