@@ -4,12 +4,12 @@ import android.content.Context
 import android.content.res.TypedArray
 import android.util.AttributeSet
 import android.widget.TextView
-import androidx.preference.Preference
 import androidx.preference.PreferenceViewHolder
+import lineageos.preference.LineagePartsPreference
 
 import com.android.settings.R
 
-class KomodoPreference : Preference {
+class KomodoLosPreference : LineagePartsPreference {
     private var iconText: String? = null
 
     constructor(context: Context, attrs: AttributeSet) : super(context, attrs) {

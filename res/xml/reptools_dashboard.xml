@@ -10,26 +10,28 @@
         android:selectable="false" />
 
     <!-- Status Bar -->
-    <org.komodo.settings.preferences.KomodoPreference
+    <org.komodo.settings.preferences.KomodoLosPreference
         android:key="status_bar_settings"
         settings:icon_text="􀉨"
         settings:layout="@layout/reptools_about_card_top" />
 
     <!-- Button -->
-    <org.komodo.settings.preferences.KomodoPreference
+    <org.komodo.settings.preferences.KomodoLosPreference
         android:key="button_settings"
         settings:icon_text="􀇰"
         settings:layout="@layout/reptools_about_card_middle" />
 
-    <Preference
+    <org.komodo.settings.preferences.KomodoPreference
         android:key="komodo_gesture"
         android:title="@string/reptools_gestures"
+        settings:icon_text="􀠃"
         android:fragment="org.komodo.settings.category.Gestures"
         settings:layout="@layout/reptools_about_card_middle" />
 
-    <Preference
+    <org.komodo.settings.preferences.KomodoPreference
         android:key="komodo_about"
         android:title="@string/reptools_about"
+        settings:icon_text="􀠃"
         settings:layout="@layout/reptools_about_card_bottom"
         android:selectable="false" />
 
