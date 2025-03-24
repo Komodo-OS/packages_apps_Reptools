@@ -24,7 +24,7 @@
     <org.komodo.settings.preferences.KomodoPreference
         android:key="komodo_gesture"
         android:title="@string/reptools_gestures"
-        settings:icon_text="􀠃"
+        settings:icon_text="􀟜"
         android:fragment="org.komodo.settings.category.Gestures"
         settings:layout="@layout/reptools_about_card_middle" />
 
