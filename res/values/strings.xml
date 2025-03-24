@@ -6,4 +6,9 @@
     <string name="reptools_summary">Get your reptile here</string>
 
     <string name="reptools_about">About us</string>
+
+    <string name="reptools_gestures">Gestures</string>
+    <!-- Three-fingers-swipe screenshot -->
+    <string name="three_finger_gesture">Swipe to screenshot</string>
+    <string name="three_finger_gesture_summary">Swipe down with three fingers to take a screenshot</string>
 </resources>

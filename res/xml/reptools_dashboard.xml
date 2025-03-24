@@ -21,4 +21,10 @@
         settings:icon_text="􀇰"
         settings:layout="@layout/reptools_about_card_bottom" />
 
+    <Preference
+        android:key="komodo_gesture"
+        android:title="@string/reptools_gestures"
+        android:fragment="org.komodo.settings.category.Gestures"
+        settings:layout="@layout/reptools_about_card_bottom" />
+
 </PreferenceScreen>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:title="@string/reptools_gestures">
+
+    <Preference
+         android:key="three_finger_gesture_summary"
+         android:title="@string/three_finger_gesture"
+         android:fragment="org.komodo.settings.category.gestures.SwipeToScreenshotGestureSettings"
+         settings:controller="org.komodo.settings.category.gestures.SwipeToScreenshotPreferenceController" />
+
+</PreferenceScreen>
