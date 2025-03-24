@@ -22,6 +22,7 @@ class Reptools : DashboardFragment() {
     }
 
     companion object {
+        const val CATEGORY_KEY = "com.android.settings.category.ia.reptools"
         private const val TAG = "Reptools"
 
         @JvmField
