@@ -11,4 +11,9 @@
     <!-- Three-fingers-swipe screenshot -->
     <string name="three_finger_gesture">Swipe to screenshot</string>
     <string name="three_finger_gesture_summary">Swipe down with three fingers to take a screenshot</string>
+
+    <string name="reptools_misc">Misc</string>
+    <!-- Game Space -->
+     <string name="game_space_title">Game Space</string>
+     <string name="game_space_summary">Enhance your gaming experience</string>
 </resources>

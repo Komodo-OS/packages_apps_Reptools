@@ -29,6 +29,13 @@
         settings:layout="@layout/reptools_about_card_middle" />
 
     <org.komodo.settings.preferences.KomodoPreference
+        android:key="komodo_misc"
+        android:title="@string/reptools_misc"
+        settings:icon_text="􀣋"
+        android:fragment="org.komodo.settings.category.Misc"
+        settings:layout="@layout/reptools_about_card_middle" />
+
+    <org.komodo.settings.preferences.KomodoPreference
         android:key="komodo_about"
         android:title="@string/reptools_about"
         settings:icon_text="􀠃"
